@@ -19,14 +19,15 @@ The following List details which features are implemented
 ## Install
 
 ```
-npm install moleculer-aws-s3 --save
+npm i @bitcomposer/moleculer-aws-s3 --save
 ```
 
 ## Usage
 
 ## Settings
 
-<!-- AUTO-CONTENT-START:SETTINGS -->| Property | Type | Default | Description |
+<!-- AUTO-CONTENT-START:SETTINGS -->
+| Property | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
 | `endPoint` | `String` | **required** | The Hostname s3 is running on and available at. Hostname or IP-Address |
 | `port` | `Number` | **required** | TCP/IP port number s3 is listening on. Default value set to 80 for HTTP and 443 for HTTPs. |
@@ -55,7 +56,8 @@ npm install moleculer-aws-s3 --save
 
 ## Actions
 
-<!-- AUTO-CONTENT-START:ACTIONS -->## `makeBucket` 
+<!-- AUTO-CONTENT-START:ACTIONS -->
+## `makeBucket` 
 
 Creates a new Bucket
 
@@ -341,7 +343,8 @@ Removes a partially uploaded object.
 
 ## `presignedGetObject` 
 
-Generates a presigned URL for HTTP GET operations. Browsers/Mobile clients may point to this URL to directly download objects even if the bucket is private. This presigned URL can have anassociated expiration time in seconds after which the URL is no longer valid. The default value is 7 days.
+Generates a presigned URL for HTTP GET operations. Browsers/Mobile clients may point to this URL to directly download objects even if the bucket is private. This presigned URL can have an
+associated expiration time in seconds after which the URL is no longer valid. The default value is 7 days.
 
 ### Parameters
 | Property | Type | Default | Description |
@@ -360,7 +363,8 @@ Generates a presigned URL for HTTP GET operations. Browsers/Mobile clients may p
 
 ## `presignedPutObject` 
 
-Generates a presigned URL for HTTP PUT operations. Browsers/Mobile clients may point to this URL to upload objects directly to a bucket even if it is private. This presigned URL can havean associated expiration time in seconds after which the URL is no longer valid. The default value is 7 days.
+Generates a presigned URL for HTTP PUT operations. Browsers/Mobile clients may point to this URL to upload objects directly to a bucket even if it is private. This presigned URL can have
+an associated expiration time in seconds after which the URL is no longer valid. The default value is 7 days.
 
 ### Parameters
 | Property | Type | Default | Description |
@@ -415,7 +419,8 @@ _<sup>Since: {{this}}</sup>_
 
 # Methods
 
-<!-- AUTO-CONTENT-START:METHODS -->## `createAwsS3Client` 
+<!-- AUTO-CONTENT-START:METHODS -->
+## `createAwsS3Client` 
 
 Creates and returns a new S3 client
 
